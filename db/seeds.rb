@@ -9,6 +9,8 @@
 User.destroy_all
 
 puts "Creating Users"
-u1 = User.create(name: 'Duey', username: "theDTP", email: 'Duey@TP.coolkid.com')
+Duey = User.create(name: 'Duey', username: 'DaDTP', email: 'Duey@TP.coolkid.com', password: '123', bio: "Hotdogs are my favorite")
+Mike = User.create(name: 'Mike', username: 'MBoi68', email: 'Mike@DTP.googles', password: '123', bio: "I ate pizza tonight")
+Tammy = User.create(name: 'Tammy', username: 'Tlady', email: 'DueyLover@coolkid.com', password: '123', bio: "I wish i was like mike")
 
 puts "Done!!!"

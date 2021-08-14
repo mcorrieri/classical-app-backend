@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 2021_08_14_015422) do
     t.string "name"
     t.string "username"
     t.string "email"
+    t.string "password_digest"
+    t.string "bio"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
