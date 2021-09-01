@@ -1,3 +1,3 @@
 class ComposerSerializer < ActiveModel::Serializer
-  attributes :id, :name, :full_name, :born, :died, :genre, :bio
+  attributes :id, :name, :full_name, :born, :died, :genre, :bio, :image
 end

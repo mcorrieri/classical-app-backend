@@ -11,12 +11,12 @@ Composer.destroy_all
 Favorite.destroy_all
 
 puts "Creating Users"
-Duey = User.create(name: 'Duey', username: 'DaDTP', email: 'Duey@TP.coolkid.com', password: '123', bio: "Hotdogs are my favorite")
+Duey = User.create(name: 'Duey', username: 'DaDTP', email: 'Duey@TP.coolkid.com', password: '123', bio: "Hotdogs are my favorite", image: "https://pyxis.nymag.com/v1/imgs/29b/bae/50c47f603f465c28cc385853c6a36169c1-29-steve-brule-check-it-out.rsquare.w700.jpg")
 Mike = User.create(name: 'Mike', username: 'MBoi68', email: 'Mike@DTP.googles', password: '123', bio: "I ate pizza tonight")
 Tammy = User.create(name: 'Tammy', username: 'Tlady', email: 'DueyLover@coolkid.com', password: '123', bio: "I wish i was like mike")
 
 puts "Creating Composers"
-Bach = Composer.create(name: "Bach", full_name: "Johann Sebastian Bach", born: 1685, died: 1750, genre: "Baroque", bio: "He is known for instrumental compositions such as the Cello Suites and Brandenburg Concertos; keyboard works such as the Goldberg Variations, The Well-Tempered Clavier and the Toccata and Fugue in D minor; and vocal music such as the St Matthew Passion and the Mass in B minor. Since the 19th-century Bach Revival, he has been generally regarded as one of the greatest composers in the history of Western music." )
+Bach = Composer.create(name: "Bach", full_name: "Johann Sebastian Bach", born: 1685, died: 1750, genre: "Baroque", bio: "He is known for instrumental compositions such as the Cello Suites and Brandenburg Concertos; keyboard works such as the Goldberg Variations, The Well-Tempered Clavier and the Toccata and Fugue in D minor; and vocal music such as the St Matthew Passion and the Mass in B minor. Since the 19th-century Bach Revival, he has been generally regarded as one of the greatest composers in the history of Western music.", image: "https://hadikarimi.com/wp-content/uploads/2020/12/Bach-1.jpg" )
 
 puts "Creating Favorites"
 f1 = Favorite.create(user_id: Duey.id, composer_id: Bach.id)
